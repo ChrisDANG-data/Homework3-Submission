@@ -21,6 +21,29 @@ from typing import Dict, List, Optional, Any
 from collections import Counter
 
 
+def remove_html_noise(text: str) -> str:
+    """
+    Remove HTML tags and boilerplate from text.
+
+    Args:
+        text: Input text (may contain HTML fragments)
+
+    Returns:
+        Clean text without HTML
+    """
+    try:
+        from bs4 import BeautifulSoup
+        text = BeautifulSoup(text, 'html.parser').get_text(separator=' ')
+    except ImportError:
+        # Fallback: regex-based HTML removal
+        text = re.sub(r'<[^>]+>', ' ', text)
+
+    # Collapse whitespace
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
+
+
 def minhash_deduplication(
     texts: List[str],
     threshold: float = 0.7,
@@ -126,27 +149,6 @@ def strip_pii(text: str) -> str:
     text = re.sub(r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b', '[IP_ADDR]', text)
     return text
 
-
-def remove_html_noise(text: str) -> str:
-    """
-    Remove HTML tags and boilerplate from text.
-
-    Args:
-        text: Input text (may contain HTML fragments)
-
-    Returns:
-        Clean text without HTML
-    """
-    try:
-        from bs4 import BeautifulSoup
-        text = BeautifulSoup(text, 'html.parser').get_text(separator=' ')
-    except ImportError:
-        # Fallback: regex-based HTML removal
-        text = re.sub(r'<[^>]+>', ' ', text)
-
-    # Collapse whitespace
-    text = re.sub(r'\s+', ' ', text).strip()
-    return text
 
 
 def remove_repetitive_ngrams(

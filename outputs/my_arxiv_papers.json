@@ -1,141 +1,89 @@
 [
   {
-    "title": "Your Pre-trained Diffusion Model Secretly Knows Restoration",
-    "abstract": "Pre-trained diffusion models have enabled significant advancements in All-in-One Restoration (AiOR), offering improved perceptual quality and generalization. However, diffusion-based restoration methods primarily rely on fine-tuning or Control-Net style modules to leverage the pre-trained diffusion model's priors for AiOR. In this work, we show that these pre-trained diffusion models inherently possess restoration behavior, which can be unlocked by directly learning prompt embeddings at the output of the text encoder. Interestingly, this behavior is largely inaccessible through text prompts and text-token embedding optimization. Furthermore, we observe that naive prompt learning is unstable because the forward noising process using degraded images is misaligned with the reverse sampling trajectory. To resolve this, we train prompts within a diffusion bridge formulation that aligns training and inference dynamics, enforcing a coherent denoising path from noisy degraded states to clean images. Building on these insights, we introduce our lightweight learned prompts on the pre-trained WAN video model and FLUX image models, converting them into high-performing restoration models. Extensive experiments demonstrate that our approach achieves competitive performance and generalization across diverse degradations, while avoiding fine-tuning and restoration-specific control modules.",
-    "url": "http://arxiv.org/abs/2604.04924v1",
+    "title": "Existence of dipoles of Klein-Gordon-Zakharov system",
+    "abstract": "In this paper, we study the long time behavior of solutions of Klein-Gordon-Zakharov system. We show that there exists a solution with special characteristics, which we shall refer to as a dipole solution, that is, there exists a solution $\\vec{u}$ such that   $$\\left\\|\\vec{u}(t)-\\sum_{k=1}^{2}\\vec{R}_{k}\\right\\|_{X}   \\to 0 \\, \\, \\text{as}\\, \\, t\\to \\infty,$$   where $\\vec{R}_{k}$ represents a solitary wave for each $k$, with a translation $z_k$ with respect to its position, satisfying that $$|z_1(t)-z_2(t)| \\sim 2\\log(t)\\, \\, \\text{as} \\, \\, t\\to \\infty.$$   Our approach will initially focus on the spectral analysis of the Hamiltonian operator associated with our system. Subsequently, we aim to establish a coercivity estimate that will allow us to derive conditions ensuring the existence of our solution. It is important to note that, in this problem, our objective is to obtain approximate solutions by solving a final data problem. These approximate solutions will then be used, through uniform estimates and compactness results, to derive the desired conclusions via density arguments.",
+    "url": "http://arxiv.org/abs/2605.00805v1",
     "authors": [
-      "Sudarshan Rajagopalan",
-      "Vishal M. Patel"
+      "Vicente Alvarez",
+      "Amin Esfahani"
     ]
   },
   {
-    "title": "How AI Aggregation Affects Knowledge",
-    "abstract": "Artificial intelligence (AI) changes social learning when aggregated outputs become training data for future predictions. To study this, we extend the DeGroot model by introducing an AI aggregator that trains on population beliefs and feeds synthesized signals back to agents. We define the learning gap as the deviation of long-run beliefs from the efficient benchmark, allowing us to capture how AI aggregation affects learning. Our main result identifies a threshold in the speed of updating: when the aggregator updates too quickly, there is no positive-measure set of training weights that robustly improves learning across a broad class of environments, whereas such weights exist when updating is sufficiently slow. We then compare global and local architectures. Local aggregators trained on proximate or topic-specific data robustly improve learning in all environments. Consequently, replacing specialized local aggregators with a single global aggregator worsens learning in at least one dimension of the state.",
-    "url": "http://arxiv.org/abs/2604.04906v1",
+    "title": "ML-Bench&Guard: Policy-Grounded Multilingual Safety Benchmark and Guardrail for Large Language Models",
+    "abstract": "As Large Language Models (LLMs) are increasingly deployed in cross-linguistic contexts, ensuring safety in diverse regulatory and cultural environments has become a critical challenge. However, existing multilingual benchmarks largely rely on general risk taxonomies and machine translation, which confines guardrail models to these predefined categories and hinders their ability to align with region-specific regulations and cultural nuances. To bridge these gaps, we introduce ML-Bench, a policy-grounded multilingual safety benchmark covering 14 languages. ML-Bench is constructed directly from regional regulations, where risk categories and fine-grained rules derived from jurisdiction-specific legal texts are directly used to guide the generation of multilingual safety data, enabling culturally and legally aligned evaluation across languages. Building on ML-Bench, we develop ML-Guard, a Diffusion Large Language Model (dLLM)-based guardrail model that supports multilingual safety judgment and policy-conditioned compliance assessment. ML-Guard has two variants, one 1.5B lightweight model for fast `safe/unsafe' checking and a more capable 7B model for customized compliance checking with detailed explanations. We conduct extensive experiments against 11 strong guardrail baselines across 6 existing multilingual safety benchmarks and our ML-Bench, and show that ML-Guard consistently outperforms prior methods. We hope that ML-Bench and ML-Guard can help advance the development of regulation-aware and culturally aligned multilingual guardrail systems.",
+    "url": "http://arxiv.org/abs/2605.00689v1",
     "authors": [
-      "Daron Acemoglu",
-      "Tianyi Lin",
-      "Asuman Ozdaglar",
-      "James Siderius"
+      "Yunhan Zhao",
+      "Zhaorun Chen",
+      "Xingjun Ma",
+      "Yu-Gang Jiang",
+      "Bo Li"
     ]
   },
   {
-    "title": "Connection between the contextuality breaking and incompatibility breaking qubit channels",
-    "abstract": "Contextuality and measurement incompatibility are two fundamental aspects of nonclassicality, and their manifestations in observed quantum correlations are often deeply interconnected. Recently, measurement incompatibility has been studied in connection with nonlocality, particularly in terms of their robustness under various quantum channels. This line of investigation helps establish a connection between the channels that break nonlocality and those that break incompatibility. In this study, we focus on an asymmetric bipartite Bell scenario involving three and four inputs on Alice and Bob sides, respectively, with each of these inputs having dichotomous outcomes. Under the assumption of locality, the observed statistics in this asymmetric scenario obeys the Elegant Bell inequality (EBI). Here, we use a different version of the EBI that relies on the assumption of the preparation noncontextuality. By taking the violation of this noncontextual version of EBI as a witness of preparation contextuality we establish a connection between the channels that break contextuality and the channels that break triple-wise measurement incompatibility. Our results suggest that any channel which breaks EBI contextuality will also break Clauser-Horne-Shimony-Holt (CHSH) nonlocality; however, the reverse does not hold. We also show that a depolarising channel that breaks N-wise incompatibility can also break a certain form of contextuality, witnessed by a generalised inequality involving N measurements on one wing of a bipartite Bell scenario.",
-    "url": "http://arxiv.org/abs/2604.04899v1",
+    "title": "EQSANS-CLI: A natural-language, agent-ready command-line tool for small-angle neutron scattering data reduction at EQ-SANS",
+    "abstract": "Small-angle neutron scattering (SANS) data reduction at user facilities follows a largely repetitive workflow. Runs are first classified in the catalog and matched to transmission, background, and empty-beam references within the same instrument configuration. The data are then reduced, placed on an absolute scale using a standard, and stitched across configurations. Although these steps are individually well understood, they remain weakly connected, producing a coordination burden that scales with the number of runs and configurations. This paper describes EQSANS-CLI, a command-line tool that organizes this workflow into a coherent, scriptable, and agent-addressable system. The design rests on four principles: a shared command-handler layer that all input paths converge on; a persistent \\emph{working table} that holds every reduction decision as editable rows; two input surfaces (an interactive terminal and a headless JSON mode) that compile to the same handler entry point; and a status-driven re-reduction model that treats parameter changes as first-class events. An \\texttt{/autopilot} command chains the full pipeline from the IPTS number to stitched $I(Q)$ curves in one invocation. A Slack bot demonstrates that the headless interface, together with a single skill document loaded into an external agent's system prompt, is sufficient to drive complete reductions by natural language from a mobile device. The architecture is intentionally minimal on the agent side: the CLI is the authoritative executor, and the agent's only job is to translate human intent into commands on a stable contract.",
+    "url": "http://arxiv.org/abs/2605.00651v1",
     "authors": [
-      "Swati Kumari",
-      "Sumit Mukherjee",
-      "R. Prabhu"
+      "Changwoo Do"
     ]
   },
   {
-    "title": "Topological surface states revealed by the Zeeman effect in superconducting UTe2",
-    "abstract": "Intrinsic topological superconductors with protected boundary modes obeying non-Abelian statistics constitute a vanishingly small class of quantum materials. A defining spectroscopic signature of such phases is the presence of in-gap topological surface states (TSS). However, despite extensive theoretical proposals, their unambiguous experimental identification has remained elusive. Here we use vector magnetic-field scanning tunnelling microscopy to obtain direct spectroscopic evidence of TSS in the spin-triplet superconductor UTe2. Atomic-scale spectroscopy reveals striking site-dependent superconductivity: Te sites host a large in-gap density of states that nearly fills the superconducting gap, whereas neighboring atomic sites remain gapped. Upon application of a magnetic field, the in-gap states on the Te sites are selectively suppressed, yielding a spatially homogeneous superconducting state with a markedly deeper gap relative to zero field. This site-selective gap evolution is in quantitative agreement with theoretical predictions for TSS in UTe2 that possess dominant Te-orbital character. Spectral-function calculations incorporating the Zeeman coupling reproduce the observed magnetic-field response. Our results provide a spectroscopic fingerprint of the long-sought TSS in superconductors and establish UTe2 as a compelling system for exploring intrinsic topological superconductivity.",
-    "url": "http://arxiv.org/abs/2604.04883v1",
+    "title": "Is Textual Similarity Invariant under Machine Translation? Evidence Based on the Political Manifesto Corpus",
+    "abstract": "We investigate the extent to which cosine similarity between paragraph embeddings is invariant under machine translation, using the Manifesto Corpus of over 2,800 political party platforms in 28 languages translated to English via the EU eTranslation service. Rather than measuring translation-induced semantic shift directly we measure the stability of pairwise similarity relationships across embedding models, and use inter-model disagreement on original-language text as a calibrated invariance threshold. This yields a per-language non-inferiority test for four hypotheses about how translation interacts with embedding choice, with verdicts that distinguish languages where translation demonstrably preserves semantic structure from those where it demonstrably degrades it and from those where the available evidence does not resolve the question. The framework is corpus- and pipeline-agnostic and extends naturally to downstream tasks. Applied to our data, it identifies ten languages with translation invariance and four with detectable distortion.",
+    "url": "http://arxiv.org/abs/2605.00618v1",
     "authors": [
-      "Zhen Zhu",
-      "Hans Christiansen",
-      "Yudi Huang",
-      "Kaiming Liu",
-      "Zheyu Wu",
-      "Shanta R. Saha",
-      "Johnpierre Paglione",
-      "Alexander G. Eaton",
-      "Andrej Cabala",
-      "Michal Vališka",
-      "Rafael M. Fernandes",
-      "Andreas Kreisel",
-      "Brian M. Andersen",
-      "Vidya Madhavan"
+      "Daria Boratyn",
+      "Damian Brzyski",
+      "Albert Leśniak",
+      "Wojciech Łukasik",
+      "Maciej Rapacz",
+      "Jan Rybicki",
+      "Wojciech Słomczyński",
+      "Dariusz Stolicki"
     ]
   },
   {
-    "title": "Boltzmann-Loschmidt dispute reloaded quantum 150 years later",
-    "abstract": "The Boltzmann-Loschmidt dispute of 1876 questioned the possibility of a statistical irreversible description by time reversible classical equations of motion of atoms. Here we show analytically and numerically that the quantum chaos diffusion of cold atoms, or ions, in a harmonic trap and pulsed optical lattice can be inverted back in time with up to 100\\% efficiency. This is in sharp contrast to classical evolution where exponentially small errors break time reversibility. We argue that the existing experimental skills allow highlighting the Boltzmann-Loschmidt dispute from a quantum perspective.",
-    "url": "http://arxiv.org/abs/2604.04879v1",
+    "title": "AI Washing Inflates Expected Performance but Not Interaction Outcomes: An AI Placebo Study Using Fitts' Law",
+    "abstract": "Expectations about the support of artificial intelligence (AI) may influence interaction outcomes similar to placebos. Such expectations may result from AI washing, a practice of overstating a system's AI capabilities when actual functionality is limited. For example, some computer mice are marketed as \"AI-assisted\" despite lacking AI in core functions. In a within-subjects study, 28 participants completed Fitts' Law tasks with a computer mouse under three conditions: no support, supposed predictive AI support, and supposed biosignal-enhanced AI support. Objective Fitts' Law performance indicators and subjective performance expectations, perceived workload, and perceived usability were measured. Compared to baseline, participants expected significantly improved performance in placebo conditions. However, these expectations did not translate into differences in objective or subjective assessments. This paper contributes evidence that AI washing inflates user expectations without altering actual interaction outcomes, highlighting a critical transparency issue. By exposing how deceptive AI marketing can shape user expectations, we underscore the need for accountability in AI product claims. Further, we establish Fitts' Law as a rigorous methodological lens for auditing AI-labelled input devices.",
+    "url": "http://arxiv.org/abs/2605.00582v1",
     "authors": [
-      "Leonardo Ermann",
-      "Alexei D. Chepelianskii",
-      "Dima L. Shepelyansky"
+      "Nick von Felten",
+      "Luisa Ella Müller",
+      "Johannes Schöning"
     ]
   },
   {
-    "title": "Driving Quantum Heat Engines Beyond Classical Limits through Multilevel Coherence",
-    "abstract": "Quantum coherence provides a controllable thermodynamic resource that can raise or lower the effective temperature of a cavity mode, enabling efficiency tuning in quantum heat engines. Here, we derive analytic expressions for the effective engine temperature, demonstrating the enhanced temperature tunability achievable via $N$-level ground-state coherence. We further unify ground- and excited-state coherence within a single analytic framework, revealing their interplay as a mechanism for thermodynamic control. Such quantum resources serve as tunable parameters that enable switching between heating, cooling, and cancellation regimes, driving the effective temperature from near-zero to divergence. Ultimately, our framework connects and generalizes previous models of quantum heat engines, and we identify rubidium atoms as a promising candidate for experimentally realizing these coherence-assisted effects.",
-    "url": "http://arxiv.org/abs/2604.04873v1",
+    "title": "Depth-Guided Privacy-Preserving Visual Localization Using 3D Sphere Clouds",
+    "abstract": "The emergence of deep neural networks capable of revealing high-fidelity scene details from sparse 3D point clouds has raised significant privacy concerns in visual localization involving private maps. Lifting map points to randomly oriented 3D lines is a well-known approach for obstructing undesired recovery of the scene images, but these lines are vulnerable to a density-based attack that can recover the point cloud geometry by observing the neighborhood statistics of lines. With the aim of nullifying this attack, we present a new privacy-preserving scene representation called \\emph{sphere cloud}, which is constructed by lifting all points to 3D lines crossing the centroid of the map, resembling points on the unit sphere. Since lines are most dense at the map centroid, the sphere cloud mislead the density-based attack algorithm to incorrectly yield points at the centroid, effectively neutralizing the attack. Nevertheless, this advantage comes at the cost of i) a new type of attack that may directly recover images from this cloud representation and ii) unresolved translation scale for camera pose estimation. To address these issues, we introduce a simple yet effective cloud construction strategy to thwart new attack and propose an efficient localization framework to guide the translation scale by utilizing absolute depth maps acquired from on-device time-of-flight (ToF) sensors. Experimental results on public RGB-D datasets demonstrate sphere cloud achieves competitive privacy-preserving ability and localization runtime while not excessively compensating the pose estimation accuracy compared to other depth-guided localization methods.",
+    "url": "http://arxiv.org/abs/2605.00562v1",
     "authors": [
-      "Hui Wang",
-      "Yusef Maleki",
-      "William J. Munro",
-      "Marlan O. Scully"
+      "Heejoon Moon",
+      "Jongwoo Lee",
+      "Jeonggon Kim",
+      "Je Hyeong Hong"
     ]
   },
   {
-    "title": "Measurement of the galaxy-velocity power spectrum of DESI tracers with the kinematic Sunyaev-Zeldovich effect using DESI DR2 and ACT DR6",
-    "abstract": "Joint analyses of high-resolution CMB temperature maps with galaxy surveys provide a unique way to reconstruct the radial velocity field of the underlying matter distribution via the kinematic Sunyaev-Zeldovich (kSZ) effect. Using data from the Atacama Cosmology Telescope (ACT) DR6 and the Dark Energy Spectroscopic Instrument (DESI) DR2, we present radial velocity reconstructions for luminous red galaxies (LRGs), emission-line galaxies (ELGs), and quasars (QSOs). Leveraging the spectroscopic data, we are able to reliably model the foreground contamination and report a negligible impact on our main observables. We detect the velocity-galaxy cross-correlation at $17.0σ$ for LRGs, and for the first time, at $8.3σ$ for ELGs and $6.8σ$ for QSOs. We further report the first detection of the velocity-velocity correlation using LRGs at $3.1σ$, as well as the highest cumulative detection of the kSZ effect to date at $20.8 σ$. Similarly to previous results, we find a lower amplitude of the kSZ signal compared to our fiducial halo model prediction and electron profile assuming a Battaglia profile. Combining these new observables, we obtain constraints on local-type primordial non-Gaussianity (PNG): $f_{\\rm NL}^{\\rm loc} = 15.9_{-34.4}^{+34.6}$ at 68\\% confidence, which represents the tightest constraint to date derived from the velocity field. The measurements presented here already exhibit lower noise on a per-mode basis than the galaxy auto-correlation on the largest scales, $k<0.004~\\rm{Mpc^{-1}}$, highlighting the key role these observables will play in the context of future CMB experiments such as the Simons Observatory.",
-    "url": "http://arxiv.org/abs/2604.04867v1",
+    "title": "$ρ$ mesons in finite magnetic field and finite temperature",
+    "abstract": "The mass spectra of $ρ$ mesons ($ρ_{Q=\\pm 1}^{s_z=0,\\pm 1}$ and $ρ_{Q=0}^{s_z=0,\\pm 1}$) at finite magnetic field and temperature are studied in frame of the two-flavor Nambu-Jona-Lasinio model. Fully considering the breaking of translational invariance induced by external magnetic field, the analytical form of $ρ$ meson propagators have been derived in the Ritus scheme and Schwinger scheme, which gives the same algebraic formula. When solving the pole equation of $ρ$ meson propagators, multiple solutions of the meson mass appear due to the dimension reduction of their constituent quarks in magnetic fields. At vanishing temperature, we focus on the $ρ$ meson masses $M_ρ$ corresponding to the lowest value solution of the pole equation. $M_{ρ^{-}_+}$, $M_{ρ^{0}_+}$ and $M_{ρ^{\\pm}_0}$ increase with magnetic field. $M_{ρ^{+}_+}$ firstly decreases and then becomes saturated with increasing magnetic field. $M_{ρ^0_0}$ is not sensitive to magnetic field. These results are consistent with the available LQCD simulations. At finite temperature, we discuss the lowest four/five solutions of $ρ$ meson masses $M^{i=0,1,2,3,4}_ρ$. With fixed magnetic field, they decrease with temperature, and approach the mass sum of their constituent quarks at high temperature. The mass solution $M^{i}_ρ$ for different mesons $ρ_+^{0,\\pm}$ and $ρ_0^{0,\\pm}$ may become degenerate at finite magnetic field and temperature.",
+    "url": "http://arxiv.org/abs/2605.00561v1",
     "authors": [
-      "Edmond Chaussidon",
-      "Selim C. Hotinli",
-      "Simone Ferraro",
-      "Kendrick Smith",
-      "Xinyi Chen",
-      "J. Aguilar",
-      "S. Ahlen",
-      "D. Bianchi",
-      "D. Brooks",
-      "T. Claybaugh",
-      "A. Cuceu",
-      "A. de la Macorra",
-      "B. Dey",
-      "P. Doel",
-      "A. Font-Ribera",
-      "J. E. Forero-Romero",
-      "E. Gaztañaga",
-      "S. Gontcho A Gontcho",
-      "G. Gutierrez",
-      "J. Guy",
-      "H. K. Herrera-Alcantar",
-      "K. Honscheid",
-      "C. Howlett",
-      "D. Huterer",
-      "M. Ishak",
-      "R. Joyce",
-      "D. Kirkby",
-      "A. Kremin",
-      "O. Lahav",
-      "M. Landriau",
-      "L. Le Guillou",
-      "M. Manera",
-      "A. Meisner",
-      "R. Miquel",
-      "S. Nadathur",
-      "J. A. Newman",
-      "N. Palanque-Delabrouille",
-      "W. J. Percival",
-      "F. Prada",
-      "I. Pérez-Ràfols",
-      "G. Rossi",
-      "L. Samushia",
-      "E. Sanchez",
-      "D. Schlegel",
-      "M. Schubnell",
-      "H. Seo",
-      "J. Silber",
-      "D. Sprayberry",
-      "G. Tarlé",
-      "B. A. Weaver",
-      "C. Yèche",
-      "R. Zhou"
+      "Zhiyang Liu",
+      "Min Zhou",
+      "Yvming Tian",
+      "Rui Zhou",
+      "Guoyun Shao",
+      "Shijun Mao"
     ]
   },
   {
-    "title": "Failure of the strong feasible disjunction property",
-    "abstract": "A propositional proof system $P$ has the strong feasible disjunction property iff there is a constant $c \\geq 1$ such that whenever $P$ admits a size $s$ proof of $\\bigvee_i α_i$ with no two $α_i$ sharing an atom then one of $α_i$ has a $P$-proof of size $\\le s^c$.   It was proved by K. (2025) that no proof system strong enough admits this property assuming a computational complexity conjecture and a conjecture about proof complexity generators. Here we build on Ilango (2025) and Ren et al. (2025) and prove the same result under two purely computational complexity hypotheses:   - there exists a language in class E that requires exponential size circuits even if they are allowed to query an NP oracle,   - there exists a P/poly demi-bit in the sense of Rudich (1997).",
-    "url": "http://arxiv.org/abs/2604.04830v1",
+    "title": "Bounds on massive graviton-like particles from searches for axion-like particles coupling to photons",
+    "abstract": "Limits on spin-0 axion-like-particles (ALPs) coupling to photons are reinterpreted as constraints on massive spin-2 graviton-like-particles (GLPs) with universal coupling $α_\\text{G}/M_\\text{P}$ (where $M_\\text{P}$ is the reduced Planck mass) to the Standard Model fields. A minimally model-dependent recasting is performed, exploiting the formally analogous production and detection mechanisms for both particle types, based on the Primakoff and Gertsenshtein effects, i.e., photon-axion/graviton conversion. Constraints originally derived in the ALP mass vs. photon-coupling plane ($m_\\text{a}, g_{\\text{a}γ}$) are translated into the corresponding bounds in the GLP ($m_\\text{G}, α_\\text{G}/M_\\text{P}$) parameter space over the full mass range, $m_\\text{a,G} \\approx 10^{-20}$--$10^{14}$eV probed in current and future experimental setups including cavity-based detectors (haloscopes and resonant upconversion devices), helioscopes, magnetometers, optical interferometers, beam dumps, fixed-target, and collider experiments, as well as astrophysical and cosmological constraints. Generic scenarios are considered in which GLPs are a dark matter candidate and not. Whereas current ALP searches do not set stronger bounds on massive spin-2 particles than fifth-force tests, future magnetometers, two-beam interferometers, and upconversion experiments have the potential to provide very strong sensitivity, down to $α_\\text{G}/M_\\text{P} \\approx 10^{-32} \\text{GeV}^{-1}$, for light graviton-like particles with $m_\\text{G}\\lesssim 10^{-8}$eV. These future detectors exhibit comparatively greater sensitivity to massive gravitons than to axions. For massive gravitons at the TeV scale, exclusive diphoton decay searches, employed in ALP studies, offer a complementary approach to standard searches for spin-2 resonances in other inclusive final states.",
+    "url": "http://arxiv.org/abs/2605.00549v1",
     "authors": [
-      "Jan Krajicek"
+      "Jordan Gué",
+      "David d'Enterria"
     ]
   }
 ]

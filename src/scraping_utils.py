@@ -142,7 +142,12 @@ def _extract_as_markdown(url: str) -> Dict[str, Any]:
     start = time.time()
 
     resp = req.get(url, timeout=15, headers={
-        'User-Agent': 'Mozilla/5.0 (research-bot)'
+        # 'User-Agent': 'Mozilla/5.0 (research-bot)'
+        "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/120.0.0.0 Safari/537.36"
+    )
     })
 
     h = html2text.HTML2Text()
@@ -269,3 +274,13 @@ def compare_extractors(url: str) -> Dict[str, Any]:
         "trafilatura": traf_result,
         "crawl4ai": c4ai_result,
     }
+
+
+    
+from typing import Dict, Any
+import sys
+import time
+
+
+
+

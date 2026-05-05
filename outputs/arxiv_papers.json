@@ -1,66 +1,97 @@
 [
   {
-    "title": "Vanast: Virtual Try-On with Human Image Animation via Synthetic Triplet Supervision",
-    "abstract": "We present Vanast, a unified framework that generates garment-transferred human animation videos directly from a single human image, garment images, and a pose guidance video. Conventional two-stage pipelines treat image-based virtual try-on and pose-driven animation as separate processes, which often results in identity drift, garment distortion, and front-back inconsistency. Our model addresses these issues by performing the entire process in a single unified step to achieve coherent synthesis. To enable this setting, we construct large-scale triplet supervision. Our data generation pipeline includes generating identity-preserving human images in alternative outfits that differ from garment catalog images, capturing full upper and lower garment triplets to overcome the single-garment-posed video pair limitation, and assembling diverse in-the-wild triplets without requiring garment catalog images. We further introduce a Dual Module architecture for video diffusion transformers to stabilize training, preserve pretrained generative quality, and improve garment accuracy, pose adherence, and identity preservation while supporting zero-shot garment interpolation. Together, these contributions allow Vanast to produce high-fidelity, identity-consistent animation across a wide range of garment types.",
-    "url": "http://arxiv.org/abs/2604.04934v1",
+    "title": "Posterior Augmented Flow Matching",
+    "abstract": "Flow matching (FM) trains a time-dependent vector field that transports samples from a simple prior to a complex data distribution. However, for high-dimensional images, each training sample supervises only a single trajectory and intermediate point, yielding an extremely sparse and high-variance training signal. This under-constrained supervision can cause flow collapse, where the learned dynamics memorize specific source-target pairings, mapping diverse inputs to overly similar outputs, failing to generalize. We introduce Posterior-Augmented Flow Matching (PAFM), a theoretically grounded generalization of FM that replaces single-target supervision with an expectation over an approximate posterior of valid target completions for a given intermediate state and condition. PAFM factorizes this intractable posterior into (i) the likelihood of the intermediate under a hypothesized endpoint and (ii) the prior probability of that endpoint under the condition, and uses an importance sampling scheme to construct a mixture over multiple candidate targets. We prove that PAFM yields an unbiased estimator of the original FM objective while substantially reducing gradient variance during training by aggregating information from many plausible continuation trajectories per intermediate. Finally, we show that PAFM improves over FM by up to 3.4 FID50K across different model scales (SiT-B/2 and SiT-XL/2), different architectures (SiT and MMDiT), and in both class and text conditioned benchmarks (ImageNet and CC12M), with a negligible increase in the compute overhead. Code: https://github.com/gstoica27/PAFM.git.",
+    "url": "http://arxiv.org/abs/2605.00825v1",
     "authors": [
-      "Hyunsoo Cha",
-      "Wonjung Woo",
-      "Byungjun Kim",
-      "Hanbyul Joo"
+      "George Stoica",
+      "Sayak Paul",
+      "Matthew Wallingford",
+      "Vivek Ramanujan",
+      "Abhay Nori",
+      "Winson Han",
+      "Ali Farhadi",
+      "Ranjay Krishna",
+      "Judy Hoffman"
     ]
   },
   {
-    "title": "Beyond the Final Actor: Modeling the Dual Roles of Creator and Editor for Fine-Grained LLM-Generated Text Detection",
-    "abstract": "The misuse of large language models (LLMs) requires precise detection of synthetic text. Existing works mainly follow binary or ternary classification settings, which can only distinguish pure human/LLM text or collaborative text at best. This remains insufficient for the nuanced regulation, as the LLM-polished human text and humanized LLM text often trigger different policy consequences. In this paper, we explore fine-grained LLM-generated text detection under a rigorous four-class setting. To handle such complexities, we propose RACE (Rhetorical Analysis for Creator-Editor Modeling), a fine-grained detection method that characterizes the distinct signatures of creator and editor. Specifically, RACE utilizes Rhetorical Structure Theory to construct a logic graph for the creator's foundation while extracting Elementary Discourse Unit-level features for the editor's style. Experiments show that RACE outperforms 12 baselines in identifying fine-grained types with low false alarms, offering a policy-aligned solution for LLM regulation.",
-    "url": "http://arxiv.org/abs/2604.04932v1",
+    "title": "CustomDancer: Customized Dance Recommendation by Text-Dance Retrieval",
+    "abstract": "Dance serves as both a cultural cornerstone and a medium for personal expression, yet the rapid growth of online dance content has made personalized discovery increasingly difficult. Text-based dance retrieval offers a natural interface for users to search with choreographic intent, but it remains underexplored because dance requires simultaneous reasoning over linguistic semantics, musical rhythm, and full-body motion dynamics. We introduce TD-Data, a large-scale open dataset for text-dance retrieval, containing about 4,000 12-second dance clips, 14.6 hours of motion, 22 genres, and annotations from professional dance experts. On top of this dataset, we propose CustomDancer, a multimodal retrieval framework that aligns text with dance through a CLIP-based text encoder, music and motion encoders, and a music-motion blending module. CustomDancer achieves state-of-the-art performance on TD-Data, reaching 10.23% Recall@1 and improving retrieval quality in both quantitative benchmarks and user preference studies.",
+    "url": "http://arxiv.org/abs/2605.00824v1",
     "authors": [
-      "Yang Li",
-      "Qiang Sheng",
-      "Zhengjia Wang",
-      "Yehan Yang",
-      "Danding Wang",
-      "Juan Cao"
+      "Yawen Qin",
+      "Ke Qiu",
+      "Qin Zhang"
     ]
   },
   {
-    "title": "LoMa: Local Feature Matching Revisited",
-    "abstract": "Local feature matching has long been a fundamental component of 3D vision systems such as Structure-from-Motion (SfM), yet progress has lagged behind the rapid advances of modern data-driven approaches. The newer approaches, such as feed-forward reconstruction models, have benefited extensively from scaling dataset sizes, whereas local feature matching models are still only trained on a few mid-sized datasets. In this paper, we revisit local feature matching from a data-driven perspective. In our approach, which we call LoMa, we combine large and diverse data mixtures, modern training recipes, scaled model capacity, and scaled compute, resulting in remarkable gains in performance. Since current standard benchmarks mainly rely on collecting sparse views from successful 3D reconstructions, the evaluation of progress in feature matching has been limited to relatively easy image pairs. To address the resulting saturation of benchmarks, we collect 1000 highly challenging image pairs from internet data into a new dataset called HardMatch. Ground truth correspondences for HardMatch are obtained via manual annotation by the authors. In our extensive benchmarking suite, we find that LoMa makes outstanding progress across the board, outperforming the state-of-the-art method ALIKED+LightGlue by +18.6 mAA on HardMatch, +29.5 mAA on WxBS, +21.4 (1m, 10$^\\circ$) on InLoc, +24.2 AUC on RUBIK, and +12.4 mAA on IMC 2022. We release our code and models publicly at https://github.com/davnords/LoMa.",
-    "url": "http://arxiv.org/abs/2604.04931v1",
+    "title": "Reliability, Robustness, and Resilience Modeling for Surveillance System in Advanced Air Mobility Operations",
+    "abstract": "Ensuring the safe and efficient operation of Advanced Air Mobility (AAM) in low-altitude airspace requires a reliable, robust, and resilient surveillance system capable of continuously detecting, identifying, and tracking aircraft under both normal and off-nominal conditions. To address this need, this study develops a comprehensive 3R modeling framework, reliability, robustness, and resilience, for the Surveillance for Advanced Air Mobility (SAM) system, with a focus on the optimal design and operation of a multi-type sensor network. Under normal operating conditions, the reliability model determines the baseline sensor types, quantities, and locations required to satisfy surveillance coverage and detection requirements. To address external perturbations, such as adverse weather conditions or sudden increases in AAM traffic demand, the robustness model identifies additional sensor requirements needed to maintain system performance. Furthermore, for surveillance outages caused by primary sensor failures, the resiliency model develops backup sensor deployment and dispatch strategies to provide temporary surveillance coverage, minimize operational disruptions, and support the safe continuation of AAM operations.",
+    "url": "http://arxiv.org/abs/2605.00823v1",
     "authors": [
-      "David Nordström",
-      "Johan Edstedt",
-      "Georg Bökman",
-      "Jonathan Astermark",
-      "Anders Heyden",
-      "Viktor Larsson",
-      "Mårten Wadenbäck",
-      "Michael Felsberg",
-      "Fredrik Kahl"
+      "Esrat Farhana Dulia",
+      "Caleb Adams",
+      "Syed Arbab Mohd Shihab",
+      "Ruben Del Rosario"
     ]
   },
   {
-    "title": "Early Stopping for Large Reasoning Models via Confidence Dynamics",
-    "abstract": "Large reasoning models rely on long chain-of-thought generation to solve complex problems, but extended reasoning often incurs substantial computational cost and can even degrade performance due to overthinking. A key challenge is determining when the model should stop reasoning and produce the final answer. In this work, we study the confidence of intermediate answers during reasoning and observe two characteristic behaviors: correct reasoning trajectories often reach high-confidence answers early, while incorrect rollouts tend to produce long, unproductive reasoning traces and exhibit less reliable confidence dynamics. Motivated by these observations, we propose CoDE-Stop (Confidence Dynamics Early Stop), an early stopping method that leverages the dynamics of intermediate answer confidence to decide when to terminate reasoning, requiring no additional training and easily integrating into existing models. We evaluate CoDE-Stop on diverse reasoning and science benchmarks across multiple models. Compared to prior early stopping methods, it achieves a more favorable accuracy-compute tradeoff and reduces total token usage by 25-50% compared to standard full-length reasoning. In addition, we provide analyses of confidence dynamics during reasoning, offering insights into how confidence changes in both correct and incorrect trajectories.",
-    "url": "http://arxiv.org/abs/2604.04930v1",
+    "title": "PEARLS: Two Distinct Populations of AGN Hosts Moving Between Star Formation and Quiescence",
+    "abstract": "We present the results of AGN--host-galaxy decomposition using JWST/NIRCam, HST/ACS, and HST/WFC3 imaging of the North Ecliptic Pole Time Domain Field (NEP-TDF). The light-profiles of 36 NIRCam-selected AGN candidates are modeled for measurement of their point sources, and point source-subtracted host-galaxy emission is used in SED modeling for star formation rate (SFR) estimation. Offsets from the canonical star-forming main sequence (SFMS) show that the host galaxies form two distinct groups distinguished by their star formation: a ``bridge'' between the moderate SFRs of radio sources and low SFRs of X-ray sources, and a cleanly-separated ``branch'' above $Δ\\rm SFMS = -1$ whose SFR trends positively with AGN fraction. Branch galaxies include late-type galaxies with X-ray and radio detections and more dominant point sources that are most certainly AGN, while bridge galaxies have predominantly early-type morphologies with weaker point sources that may be due to compact stellar bulges. Both groups show evidence of recent transition between star formation and quiescence, but neither group shows preference for higher or lower stellar mass or redshift, suggesting that star formation in NIRCam-selected AGN-hosts is more strongly determined by AGN activity than by stellar mass.",
+    "url": "http://arxiv.org/abs/2605.00822v1",
     "authors": [
-      "Parsa Hosseini",
-      "Sumit Nawathe",
-      "Mahdi Salmani",
-      "Meisam Razaviyayn",
-      "Soheil Feizi"
+      "Gibson B. Bowling",
+      "Rafael Ortiz",
+      "S. P. Willner",
+      "Seth H. Cohen",
+      "Timothy Carleton",
+      "Rogier A. Windhorst",
+      "Rolf A. Jansen",
+      "Christopher N. A. Willmer",
+      "W. Peter Maksym",
+      "Anton M. Koekemoer",
+      "Madeline A. Marshall",
+      "Rosalia O'Brien",
+      "Payaswini Saikia",
+      "Massimo Ricotti",
+      "Jordan C. J. D'Silva",
+      "Dan Coe",
+      "Christopher J. Conselice",
+      "Jose M. Diego",
+      "Simon P. Driver",
+      "Brenda L. Frye",
+      "Norman A. Grogin",
+      "Rachel Honor",
+      "Jake Summers",
+      "Nor Pirzkal",
+      "Aaron Robotham",
+      "Russell E. Ryan",
+      "Brent M. Smith",
+      "Haojing Yan",
+      "Cheng Cheng",
+      "Liam Nolan",
+      "Heidi B. Hammel",
+      "Stefanie N. Milam"
     ]
   },
   {
-    "title": "Rethinking Model Efficiency: Multi-Agent Inference with Large Models",
-    "abstract": "Most vision-language models (VLMs) apply a large language model (LLM) as the decoder, where the response tokens are generated sequentially through autoregression. Therefore, the number of output tokens can be the bottleneck of the end-to-end latency. However, different models may require vastly different numbers of output tokens to achieve comparable performance. In this work, we conduct a comprehensive analysis of the latency across different components of VLMs on simulated data. The experiment shows that a large model with fewer output tokens can be more efficient than a small model with a long output sequence. The empirical study on diverse real-world benchmarks confirms the observation that a large model can achieve better or comparable performance as a small model with significantly fewer output tokens. To leverage the efficiency of large models, we propose a multi-agent inference framework that keeps large models with short responses but transfers the key reasoning tokens from the small model when necessary. The comparison on benchmark tasks demonstrates that by reusing the reasoning tokens from small models, it can help approach the performance of a large model with its own reasoning, which confirms the effectiveness of our proposal.",
-    "url": "http://arxiv.org/abs/2604.04929v1",
+    "title": "Optimization of Weak Lensing Lightcone Simulations for Higher-Order Statistics in the LSST era",
+    "abstract": "We present a framework for generating lightcone simulations tailored to the analysis of Stage-IV cosmic shear data using Higher-Order Statistics (HOS). We revisit key design choices from previous simulation campaigns and re-optimize several internal parameters, benchmarking accuracy through changes in $χ^2$ of cosmic shear statistics under survey conditions mimicking 10 years of observations from the Legacy Survey of Space and Time (LSST). We find that discretizing the lightcone uniformly in scale factor yields higher accuracy than commonly adopted schemes such as uniform spacing in redshift or comoving distance. While $N_{\\rm part} = 1024^3$ simulation particles (corresponding to a mass resolution of $m_{\\rm part} = 2.08\\times10^{10}M_\\odot$) is sufficient to model two-point statistics up to $\\ell = 5000$, we observed significant instabilities on our full suite of HOS as the number of mass shells used in the lightcone construction, $N_{\\rm shells}$, is varied. In contrast, simulations with $N_{\\rm part} = 2048^3$ particles ($m_{\\rm part} = 2.60\\times10^{9}M_\\odot$) robustly reproduce all statistics considered. In this higher-resolution configuration, $N_{\\rm shells}$ can be reduced to $\\sim50$ with only minor deviations, no larger than $0.1-0.3σ$ relative to our highest-resolution case ($N_{\\rm shells}\\sim100$). This has been explicitly verified through a comparison between our fiducial lightcone production mode based on slicing particle snapshots and an exact lightcone mode where individual particle trajectories are solved for at runtime. We further show that the particle density per pixel can be downsampled by a significant amount for $z>1.5$, saving large computational resources with no impact on the resulting statistics. These results guide the design of upcoming simulation campaigns geared towards forward-modeling and emulation-based analyses of Stage-IV data.",
+    "url": "http://arxiv.org/abs/2605.00821v1",
     "authors": [
-      "Sixun Dong",
-      "Juhua Hu",
-      "Steven Li",
-      "Wei Wen",
-      "Qi Qian"
+      "J. Mena-Fernández",
+      "C. Doux",
+      "J. Harnois-Déraps",
+      "K. Heitmann",
+      "C. Combet",
+      "P. Larsen",
+      "N. Frontiere",
+      "A. Bera",
+      "S. Samario-Nava",
+      "L. Castiblanco",
+      "C. Uhlemann",
+      "the LSST Dark Energy Science Collaboration"
     ]
   }
 ]

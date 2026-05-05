@@ -2,6 +2,7 @@
 __pycache__/
 *.py[codz]
 *$py.class
+self_learn.md
 
 # C extensions
 *.so

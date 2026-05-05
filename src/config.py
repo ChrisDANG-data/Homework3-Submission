@@ -1,8 +1,9 @@
 """Configuration for Week 3 notebooks"""
 
 # Your selected path: "A" = Claude API, "B" = Ollama, "C" = Hybrid
-PATH = "A"
+PATH = "D"
 
 # Default models — update these per user preference
 CLAUDE_MODEL = "claude-sonnet-4-6"
 OLLAMA_MODEL = "qwen3.5:27b"
+GEMINI_MODEL = "gemini-3-flash-preview"
